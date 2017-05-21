@@ -8,6 +8,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -52,13 +55,19 @@ public class PopManager {
     }
 
 
-    public void add(){
+    public void add(String name,String faceUrl){
 
         PopItem popItem = new PopItem();
         popItem.state = IN;
         popItem.view =  LayoutInflater.from(context).inflate(R.layout.activity_wrap,null);
 
         list.add(popItem);
+
+        // data
+        ImageView mFace = (ImageView) popItem.view.findViewById(R.id.iv_img);
+
+        Glide.with(context).load(faceUrl).into(mFace);
+
 
         processList();
 
@@ -76,7 +85,6 @@ public class PopManager {
                 popItem.state = MOVE;
 
             }else if(popItem.state == MOVE){
-//                frameLayout.addView(popItem.view);
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
                 Animation animation = AnimationUtils.loadAnimation(context,R.anim.move);
                 imageView.startAnimation(animation);
@@ -84,7 +92,6 @@ public class PopManager {
                 popItem.state = MOVE2;
 
             }else if(popItem.state == MOVE2){
-//                frameLayout.addView(popItem.view);
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
                 Animation animation = AnimationUtils.loadAnimation(context,R.anim.move2);
                 imageView.startAnimation(animation);
@@ -92,7 +99,6 @@ public class PopManager {
                 popItem.state = OUT;
 
             }else if(popItem.state == OUT){
-//                frameLayout.addView(popItem.view);
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
                 Animation animation = AnimationUtils.loadAnimation(context,R.anim.out);
                 imageView.startAnimation(animation);

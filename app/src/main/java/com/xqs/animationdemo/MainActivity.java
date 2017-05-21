@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -51,7 +53,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            PopManager.getInstance().add();
+            PopManager.getInstance().add("zhanghhh","http://p1.pstatp.com/origin/216b001cabb07d8141a2");
 
             handler.sendEmptyMessageDelayed(0,2000);
         }
@@ -65,6 +67,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
         surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Glide.get(this).clearMemory();
     }
 
     @Override
