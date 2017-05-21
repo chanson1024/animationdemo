@@ -5,15 +5,12 @@ import android.content.res.Configuration;
 import android.graphics.Point;
 import android.hardware.Camera;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.os.Handler;
+import android.os.Message;
 import android.view.SurfaceHolder;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +25,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
 
     private ImageView imageView;
 
-    private FrameLayout relativeLayout;
+    private FrameLayout frameLayout;
     private View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,18 +38,25 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
         // 1. 看相机配置  2.看framelayout相关 3.代码顺序 4.单例搞的鬼？
 
 
-        relativeLayout = (FrameLayout)findViewById(R.id.activity_main);
+        frameLayout = (FrameLayout)findViewById(R.id.activity_main);
 
-        view = LayoutInflater.from(this).inflate(R.layout.activity_wrap,null);
+        PopManager.getInstance().init(frameLayout,this);
 
-        relativeLayout.addView(view);
+        handler.sendEmptyMessageDelayed(0,2000);
 
-        imageView = (ImageView) view.findViewById(R.id.iv_img);
-
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.move);
-        imageView.startAnimation(animation);
 
     }
+
+    Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            PopManager.getInstance().add();
+
+            handler.sendEmptyMessageDelayed(0,2000);
+        }
+    };
+
 
     private void initView() {
         surfaceView=(CameraSurfaceView)findViewById(R.id.surfaceView);
