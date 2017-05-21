@@ -4,5 +4,6 @@
     android:toXDelta="-600"
     android:fromYDelta="0"
     android:toYDelta="0"
-    android:duration="2000" >
+    android:duration="2000"
+    android:repeatCount="10">
 </translate>

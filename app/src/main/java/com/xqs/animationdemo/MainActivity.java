@@ -35,6 +35,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
+
         initView();
 
 
@@ -48,6 +49,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
 
         Animation animation = AnimationUtils.loadAnimation(this,R.anim.move);
         imageView.startAnimation(animation);
+
     }
 
     private void initView() {
