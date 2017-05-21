@@ -12,6 +12,10 @@
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_popup_enter.xml"
     },
     {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\move.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\move.xml"
+    },
+    {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },

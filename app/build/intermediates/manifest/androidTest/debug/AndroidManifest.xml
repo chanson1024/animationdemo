@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xqs.animationdemo.test" >
+    package="com.xqs.animationdemo.test">
 
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="25" />
-
-    <instrumentation
-        android:name="android.support.test.runner.AndroidJUnitRunner"
-        android:functionalTest="false"
-        android:handleProfiling="false"
-        android:label="Tests for com.xqs.animationdemo"
-        android:targetPackage="com.xqs.animationdemo" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
+    <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
+                     android:targetPackage="com.xqs.animationdemo"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.xqs.animationdemo"/>
 </manifest>

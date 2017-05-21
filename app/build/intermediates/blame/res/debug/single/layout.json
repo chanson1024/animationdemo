@@ -12,6 +12,10 @@
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wrap.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\layout\\activity_wrap.xml"
+    },
+    {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
@@ -40,6 +44,10 @@
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
@@ -62,6 +70,10 @@
     {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_camera.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\layout\\activity_camera.xml"
     },
     {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
