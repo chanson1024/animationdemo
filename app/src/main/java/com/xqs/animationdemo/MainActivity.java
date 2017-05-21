@@ -38,6 +38,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback, Ca
 
         initView();
 
+        // 1. 看相机配置  2.看framelayout相关 3.代码顺序 4.单例搞的鬼？
+
 
         relativeLayout = (FrameLayout)findViewById(R.id.activity_main);
 
