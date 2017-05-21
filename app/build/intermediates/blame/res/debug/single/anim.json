@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_move.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\pop_move.xml"
+    },
+    {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_fade_in.xml"
     },
@@ -12,16 +16,16 @@
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\move.xml",
-        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\move.xml"
-    },
-    {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_out.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\pop_out.xml"
     },
     {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
@@ -32,8 +36,12 @@
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\in.xml",
-        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\in.xml"
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_in.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\pop_in.xml"
+    },
+    {
+        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_move2.xml",
+        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\pop_move2.xml"
     },
     {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
@@ -46,13 +54,5 @@
     {
         "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\out.xml",
-        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\out.xml"
-    },
-    {
-        "merged": "E:\\as_project\\AnimationDemo\\app\\build\\intermediates\\res\\merged\\debug\\anim\\move2.xml",
-        "source": "E:\\as_project\\AnimationDemo\\app\\src\\main\\res\\anim\\move2.xml"
     }
 ]

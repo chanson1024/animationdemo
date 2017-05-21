@@ -19,10 +19,10 @@ public final class R {
         public static final int abc_slide_in_top=0x7f050007;
         public static final int abc_slide_out_bottom=0x7f050008;
         public static final int abc_slide_out_top=0x7f050009;
-        public static final int in=0x7f05000a;
-        public static final int move=0x7f05000b;
-        public static final int move2=0x7f05000c;
-        public static final int out=0x7f05000d;
+        public static final int pop_in=0x7f05000a;
+        public static final int pop_move=0x7f05000b;
+        public static final int pop_move2=0x7f05000c;
+        public static final int pop_out=0x7f05000d;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"

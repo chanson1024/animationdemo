@@ -3,14 +3,10 @@ package com.xqs.animationdemo;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.bumptech.glide.Glide;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -63,10 +59,6 @@ public class PopManager {
 
         list.add(popItem);
 
-        // data
-        ImageView mFace = (ImageView) popItem.view.findViewById(R.id.iv_img);
-
-        Glide.with(context).load(faceUrl).into(mFace);
 
 
         processList();
@@ -79,28 +71,28 @@ public class PopManager {
             if(popItem.state == IN){
                 frameLayout.addView(popItem.view);
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
-                Animation animation = AnimationUtils.loadAnimation(context,R.anim.in);
+                Animation animation = AnimationUtils.loadAnimation(context,R.anim.pop_in);
                 imageView.startAnimation(animation);
 
                 popItem.state = MOVE;
 
             }else if(popItem.state == MOVE){
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
-                Animation animation = AnimationUtils.loadAnimation(context,R.anim.move);
+                Animation animation = AnimationUtils.loadAnimation(context,R.anim.pop_move);
                 imageView.startAnimation(animation);
 
                 popItem.state = MOVE2;
 
             }else if(popItem.state == MOVE2){
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
-                Animation animation = AnimationUtils.loadAnimation(context,R.anim.move2);
+                Animation animation = AnimationUtils.loadAnimation(context,R.anim.pop_move2);
                 imageView.startAnimation(animation);
 
                 popItem.state = OUT;
 
             }else if(popItem.state == OUT){
                 ImageView imageView = (ImageView) popItem.view.findViewById(R.id.iv_img);
-                Animation animation = AnimationUtils.loadAnimation(context,R.anim.out);
+                Animation animation = AnimationUtils.loadAnimation(context,R.anim.pop_out);
                 imageView.startAnimation(animation);
                 animation.setAnimationListener(listener);
 
